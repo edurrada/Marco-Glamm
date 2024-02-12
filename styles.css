@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family:'Montserrat', sans-serif;
+    color: #AF7A56;
+    margin: 0;
+    background-color: #FFFAF3;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #AF7A56;
+    padding: 8px 45px;
+}
+
+#logo-header{
+    height: 60px;
+}
+
+#navbar{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    color: #FFFAF3;
+    background-color: #AF7A56;
+    width: 500px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 1000;
+
+}
+.whatsapp-icon img {
+    height: auto;
+    cursor: pointer;
+}
+
+
+.shadow{
+    width: 2.5px;
+    height: 22.5px;
+    background-color:#FFFAF3;
+}
+
+.options-header{
+    font-size: 18px;
+    color: #FFFAF3;
+    text-decoration: none;
+
+}
+
+#menu{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-header{
+    width: 25px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #FFFAF3;
+    
+}
+#menu-options{
+    display: none;
+}
+
+
+
+#container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px;
+}
+
+#container-1 img{
+    width: 550px;
+}
+
+#texts-container-1{
+    width: 50%;
+    margin-top: 60px;
+}
+
+h1{
+    font-size: 34px;
+}
+
+#texts-container-1 p{
+    font-size: 18px;
+}
+
+#container-services{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+}
+#container-services span{
+    margin-bottom: 10px;
+    width: 130px;
+    height: 4px;
+    background-color: #AF7A56;
+}
+#container-services h1{
+    margin: 0;
+}
+#cards-services{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 10px #aaaaaa;
+    text-align: center;
+    width: 300px;
+    color: black;
+    padding: 10px;
+    margin: 0 25px;
+    align-items: center;
+}
+
+.card img{
+    width: 150px;
+    padding: 3px;
+}
+
+.card p{
+    color: gray;
+    margin-top: 5px;
+}
+.card h5{
+    font-size: 25px;
+    margin: 25px 10px 8px 15px;
+}
+
+.card span{
+    width: 130px;
+    height: 4px;
+    background-color: #AF7A56;
+    margin: 10px 0px 5px 0px;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+
+.logo-cc{
+    width: 29px;
+}
+
+.little-line{
+    width: 43%;
+    height: 2px;
+    background-color: #e2a78ab5;
+
+}
+
+#container-aboutme{
+    display: flex;
+    padding: 20px 40px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 100px;
+}
+aside p{
+    display: flex;
+}
+
+aside img{
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+#container-aboutme span{
+    width: 130px;
+    height: 4px;
+    background-color: #AF7A56;
+
+}
+
+#marco-aboutme{
+    width: 500px;
+    height: max-content;
+}
+
+#title-portfolio{
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+#container-portfolio{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.image-portfolio{
+    width: 300px;
+    padding: 5px;
+}
+
+
+footer{
+    display: flex;
+    background-color: #AF7A56;
+    height: 100px;
+    width: 100%;
+    margin-top: 170px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.logos-footer{
+   height: 30px;
+   padding: 39px;
+}
+
+
+
+
+    
+
+
+@media only screen and (max-width: 960px) {
+    #logo-header{
+        height: 30px;
+    }
+    header{
+        padding: 8px 20px;
+    }
+    #navbar{
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    .options-header {
+        display: block;
+        text-align: center;
+    }
+
+    .options-header {
+        display: block;
+        text-align: center;
+    }
+    #container-1{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10px 0;
+        align-items: center;
+    }
+    #container-1 img{
+        width: 80%;
+        max-width: 440px;
+    }
+    #texts-container-1{
+        width: 80%;
+    }
+    #texts-container-1 h1{
+        font-size: 22px;
+    }
+    #texts-container-1 p{
+        font-size: 16px;
+    }
+    #container-services{
+        margin: 10px;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+    }
+    #cards-services{
+        margin-top: 10px;
+        flex-direction: column;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    .card{
+        margin: 5px 0;    
+        width: 80%;
+    }
+    .card h5{
+        font-size: 20px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    .texts-card{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 3px;
+    }
+    .card span{
+        width: 75%;
+        margin: 15px 0px 5px 0px;
+    }
+
+    .logo-cc{
+        width: 17px;
+    }
+
+    .divider{
+        padding: 40px 10px;
+    }
+    #container-aboutme{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+    #container-aboutme img {
+        width: 300px;
+    }
+
+    #contanier-aboutme p{
+        margin-top: 50px;
+    }
+    .image-portfolio{
+        width: 45%;
+        padding: 5px;
+    }
+
+
+  }
+  
