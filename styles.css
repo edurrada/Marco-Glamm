@@ -7,29 +7,77 @@ body{
     background-color: #FFFAF3;
 }
 
-header{
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header {
+    background: #AF7A56;
+    padding-inline: 16px;
+
+    position: fixed;
+    width: 100%;
+  }
+  
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+  
+    padding: 0px 30px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #AF7A56;
-    padding: 8px 45px;
-}
-
-#logo-header{
-    height: 60px;
-}
-
-#navbar{
+  }
+  
+  .logo {
+    height: 70%;
+  }
+  
+  .nav-list {
     display: flex;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    justify-content: space-between;
-    color: #FFFAF3;
-    background-color: #AF7A56;
-    width: 500px;
-}
+    gap: 88px;
+    list-style: none;
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+  }
+  
+  .hero {
+    background-color: #FFFAF3;
+    padding: 0px 55px;
+  }
+  
+  .hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 4px solid #fff;
+    cursor: pointer;
+  }
+  
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
 
+  }
+
+  /*------------INICIO BODY------------*/
 .whatsapp-icon {
     position: fixed;
     bottom: 40px;
@@ -42,47 +90,12 @@ header{
     cursor: pointer;
 }
 
-
-.shadow{
-    width: 2.5px;
-    height: 22.5px;
-    background-color:#FFFAF3;
-}
-
-.options-header{
-    font-size: 18px;
-    color: #FFFAF3;
-    text-decoration: none;
-
-}
-
-#menu{
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    display: none;
-    cursor: pointer;
-}
-
-.menu-header{
-    width: 25px;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #FFFAF3;
-    
-}
-#menu-options{
-    display: none;
-}
-
-
-
+/*-------------------------------------CONTAINER 1----------------------------------------------------------*/
 #container-1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px;
+    padding: 90px 55px 55px 0px;
 }
 
 #container-1 img{
@@ -96,11 +109,15 @@ header{
 
 h1{
     font-size: 34px;
+    margin: 10px 0;
 }
 
 #texts-container-1 p{
     font-size: 18px;
+    margin-top: 30px;
 }
+
+/*..............................................CONTAINER SERVICES.............................................................*/
 
 #container-services{
     display: flex;
@@ -176,6 +193,8 @@ h1{
 
 }
 
+/*........................................CONTAINER ABOUTME.................................................................*/
+
 #container-aboutme{
     display: flex;
     padding: 20px 40px;
@@ -208,11 +227,12 @@ aside img{
     width: 500px;
     height: max-content;
 }
+/*............................................PORTFOLIO......................................*/
 
 #title-portfolio{
     display: flex;
     justify-content: center;
-    margin-top: -40px;
+    margin: -50px 0 35px 0;
 }
 
 #container-portfolio{
@@ -228,74 +248,127 @@ aside img{
     padding: 5px;
 }
 
+/*...........................FOOTER.......................................................*/
 
 footer{
     display: flex;
     background-color: #AF7A56;
     height: 100px;
     width: 100%;
-    margin-top: 170px;
+    margin: 20px 0px 0px 0px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
    
 }
 
 .logos-footer{
    height: 30px;
-   padding: 39px;
+   padding: 33px;
 }
+  
 
 
 
 
-    
-
-
-@media only screen and (max-width: 960px) {
-    #logo-header{
-        height: 30px;
-    }
-    header{
-        padding: 8px 20px;
-    }
-    #navbar{
-        display: none;
+  @media (max-width: 750px) {
+    .hero{
+        padding: 10px;
     }
 
-    #menu {
-        display: flex;
+    .hamburger {
+      display: block;
+      z-index: 1;
     }
-
-    .options-header {
-        display: block;
-        text-align: center;
+  
+    .nav-list {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #AF7A56;
+      clip-path: circle(100px at 90% -15%);
+      transition: 1s ease-out;
+  
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+  
+      pointer-events: none;
     }
-
-    .options-header {
-        display: block;
-        text-align: center;
+  
+    .nav-list a {
+      font-size: 24px;
+      opacity: 0;
     }
+  
+    .nav-list li:nth-child(1) a {
+      transition: 0.5s 0.2s;
+    }
+  
+    .nav-list li:nth-child(2) a {
+      transition: 0.5s 0.4s;
+    }
+  
+    .nav-list li:nth-child(3) a {
+      transition: 0.5s 0.6s;
+    }
+  
+    /* Estilos ativos */
+  
+    .nav.active .nav-list {
+      clip-path: circle(1500px at 90% -15%);
+      pointer-events: all;
+    }
+  
+    .nav.active .nav-list a {
+      opacity: 1;
+    }
+  
+    .nav.active .hamburger {
+      position: fixed;
+      top: 26px;
+      right: 16px;
+      border-top-color: transparent;
+    }
+  
+    .nav.active .hamburger::before {
+      transform: rotate(135deg);
+    }
+  
+    .nav.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+    /*CONTAINER 1 MOBILE..........................................................................................*/
     #container-1{
         flex-direction: column-reverse;
-        text-align: center;
         padding: 10px 0;
         align-items: center;
     }
     #container-1 img{
-        width: 80%;
+        padding-top: 75px;
+        width: 85%;
         max-width: 440px;
     }
     #texts-container-1{
-        width: 80%;
+        width: 85%;
+        margin-top: 15px;
     }
     #texts-container-1 h1{
         font-size: 22px;
     }
     #texts-container-1 p{
+        margin-top: 20px;
         font-size: 16px;
     }
+
+    /*......................................ABOUTME MOBILE.............................................................*/
+
     #container-services{
-        margin: 10px;
+        margin: 25px;
     }
     .content{
         display: flex;
@@ -358,6 +431,23 @@ footer{
         padding: 5px;
     }
 
+    #title-portfolio{
+        padding: 30px 0px 0px 0px;
+    }
 
-  }
-  
+    /*...........................FOOTER MOBILE.......................................................*/
+
+    footer{
+        height: 100px;
+        width: 100%;
+        margin-top: 45px;
+    
+    }
+
+
+
+
+}
+
+
+

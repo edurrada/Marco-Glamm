@@ -1,48 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="./styles/styles.css" rel = "stylesheet">
-    <title>MARCCO GLAMM</title>
-    
-</head>
-
-<body>
-    <header>
-        <img src="./assets/images/WhatsApp Image 2024-02-04 at 23.01.49.jpeg"  id="logo-header">
-
-        <!-- Opções do menu quando o menu hamburguer não está aberto -->
-        <div id="navbar">
-            <a href="#aboutme" class="options-header">
-                SOBRE
-            </a>
-            <div class="shadow"></div>
-            <a href="https://wa.me/5592981673170" class="options-header">
-                CONTATO
-            </a>
-            <div class="shadow"></div>
-            <a href="#portfolio" class="options-header">
-                PORTFÓLIO
-            </a>
-        </div>
-
-        <!-- Menu hamburguer (exibido em telas menores) -->
-        <div id="menu">
-            <div class="menu-header"></div>
-            <div class="menu-header"></div>
-            <div class="menu-header"></div>
-        </div>
-
-        <!-- Opções do menu quando o menu hamburguer está aberto -->
-        <nav>
-            <div class="ham-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcco Glamm</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img src="./assets/images/logo.jpeg" alt="" class="logo">
+        <button class="hamburger"></button>
+        <ul class="nav-list">
+          <li><a href="#aboutme" class="options-nav">Sobre</a></li>
+          <li><a href="#portfolio" class="options-nav">Portfólio</a></li>
+          <li><a href="#footer" class="options-nav">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div id="whatsapp-icon" class="whatsapp-icon">
@@ -51,6 +26,7 @@
         </a>
     </div>
 
+<main class="hero">
     <div id="container-1">
         <div id="texts-container-1">
             <h1>Bem-vindo ao Marcco Glamm! Ajudo você a ser sua melhor versão</h1>
@@ -122,7 +98,7 @@
                 Confio no meu talento como maquiador e hairstylist e sei que juntos vamos capturar a essência da sua beleza e criar momentos de pura elegância.
                 
                 Sinta-se radiante, sinta-se confiante. Descubra a transformação completa com Marcco Glamm.</p>
-           <img src="./assets/images/3mulheres.jpeg" alt="models">     
+           <img src="./assets/images/MODELS ABOUTME.jpeg" alt="models">     
             
         </aside>
     </div>
@@ -134,7 +110,7 @@
         <span class="little-line"></span>
 
     </div>
-    
+
     <h1 id="title-portfolio">Portfólio</h1>
 
     <div id="container-portfolio">
@@ -166,15 +142,20 @@
 
     </div>
 
-    <footer>
-        <a href="https://www.instagram.com/marccomkp/"><img src="./assets/images/rodape/instagram (1).png" class="logos-footer" alt="insta"></a>
-        <a href="https://wa.me/5592981673170"><img src="./assets/images/rodape/whatsapp (1).png" class="logos-footer" alt="whatsapp"></a>
-        <a href="marcolucenab@gmail.com"><img src="./assets/images/rodape/o-email.png" class="logos-footer" alt="email"></a>
-
-    </footer>
+    
 
 
 
-<script src="index.js"></script>
+
+
+
+</main>
+<footer id="footer">
+        <a href="https://www.instagram.com/marccomkp/"><img src="./assets/images/footer/instagram (1).png" class="logos-footer" alt="insta"></a>
+        <a href="https://wa.me/5592981673170"><img src="./assets/images/footer/whatsapp (1).png" class="logos-footer" alt="whatsapp"></a>
+        <a href= "mailto:marcolucenab@gmail.com"><img src="./assets/images/footer/o-email.png" class="logos-footer" alt="email"></a>
+
+</footer>
+
 </body>
 </html>
